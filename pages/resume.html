@@ -4,63 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Name - Computer Science Student & Aspiring Software Developer</title>
-    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
-    <header>
-        <h1>Your Name</h1>
-        <h2>Computer Science Student & Aspiring Software Developer</h2>
-    </header>
-
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hi there! I'm [Your Name], a passionate computer science student with a keen interest in software development and technology. Currently pursuing my degree at [Your University], I am eager to apply my skills and knowledge to real-world projects and challenges. I thrive in collaborative environments and am always looking for opportunities to learn and grow.</p>
-    </section>
-
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Programming Languages: Java, Python, JavaScript, C++</li>
-            <li>Web Development: HTML, CSS, React.js</li>
-            <li>Database Management: SQL, MongoDB</li>
-            <li>Version Control: Git, GitHub</li>
-            <li>Problem Solving & Algorithms</li>
-        </ul>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Online Bookstore Application</h3>
-            <p>Developed a web-based bookstore application using React.js and Node.js, allowing users to browse, search, and purchase books online. Implemented user authentication and authorization using JWT tokens and MongoDB for data storage.</p>
-        </div>
-        <div class="project">
-            <h3>Data Visualization Dashboard</h3>
-            <p>Created a data visualization dashboard using Python and Matplotlib, analyzing and presenting trends in a dataset of customer purchasing behavior. Utilized pandas for data manipulation and Matplotlib for generating interactive visualizations.</p>
-        </div>
-        <div class="project">
-            <h3>Algorithmic Trading Bot</h3>
-            <p>Designed and implemented an algorithmic trading bot in Python, leveraging machine learning algorithms to predict stock prices and make trading decisions. Integrated with financial APIs to fetch real-time market data and execute trades automatically.</p>
-        </div>
-    </section>
-
-    <section id="education">
-        <h2>Education</h2>
-        <p>Bachelor of Science in Computer Science, [Your University], [Expected Graduation Year]<br> Relevant coursework: Data Structures, Algorithms, Web Development, Database Management</p>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Feel free to reach out to me via email at [Your Email Address]. I'm always open to new opportunities and collaborations!</p>
-    </section>
-
-    <footer>
-        <h3>Connect</h3>
-        <ul>
-            <li><a href="[Your LinkedIn Profile URL]">LinkedIn</a></li>
-            <li><a href="[Your GitHub Profile URL]">GitHub</a></li>
-        </ul>
-    </footer>
+    <div>
+        <button onclick="window.location.href = '/';">Back to Home</button>
+        <button onclick="toPDF()">To PDF</button>
+        <script>
+            function toPDF() {
+                console.log('Converting to PDF...')
+                const element = document.getElementById('CV')
+                html2pdf().from(element).save()
+                console.log("")
+            }
+        </script>
+    </div>
+    <div id="CV">
+        <header>
+            <h1>Your Name</h1>
+            <h2>Computer Science Student & Aspiring Software Developer</h2>
+        </header>
+    
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hi there! I'm [Your Name], a passionate computer science student with a keen interest in software development and technology. Currently pursuing my degree at [Your University], I am eager to apply my skills and knowledge to real-world projects and challenges. I thrive in collaborative environments and am always looking for opportunities to learn and grow.</p>
+        </section>
+    
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Programming Languages: Java, Python, JavaScript, C++</li>
+                <li>Web Development: HTML, CSS, React.js</li>
+                <li>Database Management: SQL, MongoDB</li>
+                <li>Version Control: Git, GitHub</li>
+                <li>Problem Solving & Algorithms</li>
+            </ul>
+        </section>
+    
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Online Bookstore Application</h3>
+                <p>Developed a web-based bookstore application using React.js and Node.js, allowing users to browse, search, and purchase books online. Implemented user authentication and authorization using JWT tokens and MongoDB for data storage.</p>
+            </div>
+            <div class="project">
+                <h3>Data Visualization Dashboard</h3>
+                <p>Created a data visualization dashboard using Python and Matplotlib, analyzing and presenting trends in a dataset of customer purchasing behavior. Utilized pandas for data manipulation and Matplotlib for generating interactive visualizations.</p>
+            </div>
+            <div class="project">
+                <h3>Algorithmic Trading Bot</h3>
+                <p>Designed and implemented an algorithmic trading bot in Python, leveraging machine learning algorithms to predict stock prices and make trading decisions. Integrated with financial APIs to fetch real-time market data and execute trades automatically.</p>
+            </div>
+        </section>
+    
+        <section id="education">
+            <h2>Education</h2>
+            <p>Bachelor of Science in Computer Science, [Your University], [Expected Graduation Year]<br> Relevant coursework: Data Structures, Algorithms, Web Development, Database Management</p>
+        </section>
+    
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Feel free to reach out to me via email at [Your Email Address]. I'm always open to new opportunities and collaborations!</p>
+        </section>
+    
+        <footer>
+            <h3>Connect</h3>
+            <ul>
+                <li><a href="[Your LinkedIn Profile URL]">LinkedIn</a></li>
+                <li><a href="[Your GitHub Profile URL]">GitHub</a></li>
+            </ul>
+        </footer>
+    </div>
     <style>
         /* Resetting some default browser styles */
 body, h1, h2, h3, p, ul, li {
