@@ -1,0 +1,97 @@
+        /* Resetting some default browser styles */
+        body, h1, h2, h3, p, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #999999;
+            padding: 20px;
+        }
+        
+        header, footer, section {
+            margin-bottom: 30px;
+        }
+        
+        header h1 {
+            font-size: 2em;
+            color: #333;
+            border-bottom: 2px solid #333; /* Add a border to the bottom of the header text */
+            padding-bottom: 5px; /* Add some padding to separate the border from the text */
+        }
+        
+        header h2 {
+            font-size: 1.2em;
+            color: #414141;
+            padding-top: 5px; 
+        }
+        
+        section h2 {
+            font-size: 1.5em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        ul {
+            list-style-type: none;
+        }
+        
+        li {
+            margin-bottom: 5px;
+        }
+        
+        .project {
+            margin-bottom: 20px;
+        }
+        
+        footer ul {
+            display: flex;
+        }
+        
+        footer li {
+            margin-right: 10px;
+        }
+        
+        footer a {
+            text-decoration: none;
+            color: #333;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Section colors */
+#about {
+    background-color: #f0f7f4; /* Light green */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#skills {
+    background-color: #f7f0f7; /* Light purple */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#projects {
+    background-color: #f0f0f7; /* Light blue */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#education {
+    background-color: #f7f7f0; /* Light yellow */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#contact {
+    background-color: #f7f0f0; /* Light pink */
+    padding: 20px;
+    border-radius: 10px;
+}
+            
